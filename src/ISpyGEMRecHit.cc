@@ -33,7 +33,6 @@ ISpyGEMRecHit::ISpyGEMRecHit(const edm::ParameterSet& iConfig)
 
 void ISpyGEMRecHit::analyze(const edm::Event& event, const edm::EventSetup& eventSetup)
 {
-  if (event.id ().event () != 600317833) return;
   edm::Service<ISpyService> config;
   
   if ( ! config.isAvailable() )
